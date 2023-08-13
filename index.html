@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS DOM EVENT</title>
+
+    <style>
+        .heda{
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
+    <h1 onclick="console.log('ergrtgh')">Dom er aj k special event</h1>
+    <button onclick="console.log(10)">Click Me</button>
+    <button onclick="console.log(2200)">Another Button</button>
+    <br><br>
+
+    <!-- Option one : Directly set on html -->
+    <button onclick="document.body.style.backgroundColor = 'silver'">click</button> 
+
+    <br><br>
+    <button onclick="document.body.style.backgroundColor= 'aquamarine'">show</button> 
     
+    <!-- S.D.I -->
+    <!-- Option two : set a javascript function -->
+    <br><br>
+    <button onclick="makepurple()">Wanna purple?</button>
+    <br><br>
+    <button onclick="hudaiKalaBana()">hudai</button>
+    
+
+    <!-- Option three : access by ID-->
+    <br><br>
+    <button id="make-blue">Make Blue</button>
+    <br><br>
+    <button id="org">Make Orange</button>
+
+    <!-- Option Four -->
+    <br><br>
+    <button id="make-Aqua">Make Aqua</button>
+
+
+     <!-- Option Five : Use eventlistener-->
+     <button id="make-pink">Make Pink</button>
+
+
+     <!-- S.D.I -->
+     <!-- Option Six : We will use this sometimes-->
+     <button id="make-goldenrod">Make GoldenRod</button>
+    
+
+
+    <script src="./js/event.js"></script>
+
+    <script>
+
+       
+
+    </script>
 </body>
 </html>
